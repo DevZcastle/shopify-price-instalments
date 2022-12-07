@@ -1,14 +1,6 @@
 {% comment %}
-    Renders a list of product's price (regular, sale)
-
-    Accepts:
-    - product: {Object} Product Liquid object (optional)
-    - use_variant: {Boolean} Renders selected or first variant price instead of overall product pricing (optional)
-    - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
-    - price_class: {String} Adds a price class to the price element (optional)
-
-    Usage:
-    {% render 'price', product: product %}
+br - Adição feita. exemplo no tema Dawn 2.0 Shopify.
+en - Addition made. example in Dawn 2.0 Shopify theme.
 {% endcomment %}
 {%- liquid
   if use_variant
@@ -83,7 +75,7 @@
         {{ money_price }}
       </span>
 
-      <span style="font-size: 14px;font-weight:400;">em até <span style="font-weight:bold;">12x</span> de <span style="color: #34A026;font-weight:bold;"> 
+      <span>em até <span>12x</span> de <span> 
       {{ price | divided_by: 11.93 | times: 1.1979 | money }}</span>
 
 </div>
